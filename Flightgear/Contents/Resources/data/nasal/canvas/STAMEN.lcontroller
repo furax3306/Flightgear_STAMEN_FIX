@@ -18,9 +18,9 @@ var new = func(layer) {
 		listeners: [],
 	};
 
-	layer.makeURL = string.compileTemplate('https://tile.openstreetmap.org/{z}/{x}/{y}.png');
-	layer.makePath = string.compileTemplate(layer.maps_base ~ '/openstreetmap/{z}/{x}/{y}.png');
-	#https://maps.stamen.com/terrain/
+	layer.makeURL = string.compileTemplate('https://maps.stamen.com/terrain/{z}/{x}/{y}.png');
+	layer.makePath = string.compileTemplate(layer.maps_base ~ '/stamen-terrain/{z}/{x}/{y}.png');
+	
 
 	m.addVisibilityListener();
 	m.addRangeListener();
