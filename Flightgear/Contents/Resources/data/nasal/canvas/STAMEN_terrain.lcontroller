@@ -19,7 +19,7 @@ var new = func(layer) {
 	};
 
 	layer.makeURL = string.compileTemplate('https://maps.stamen.com/terrain-background/{z}/{x}/{y}.png');
-	layer.makePath = string.compileTemplate(layer.maps_base ~ '/terrain-background/{z}/{x}/{y}.png');
+	layer.makePath = string.compileTemplate(layer.maps_base ~ '/stamen-terrain-background/{z}/{x}/{y}.png');
 
 	m.addVisibilityListener();
 	m.addRangeListener();
