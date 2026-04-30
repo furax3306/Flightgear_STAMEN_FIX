@@ -18,8 +18,8 @@ var new = func(layer) {
 		listeners: [],
 	};
 
-	layer.makeURL = string.compileTemplate('https://maps.wikimedia.org/{z}/{x}/{y}.png');
-	layer.makePath = string.compileTemplate(layer.maps_base ~ '/wikimedia-map/{z}/{x}/{y}.png');
+	layer.makeURL = string.compileTemplate('https://tile.openstreetmap.org/{z}/{x}/{y}.png');
+	layer.makePath = string.compileTemplate(layer.maps_base ~ '/openstreetmap/{z}/{x}/{y}.png');
 
 	m.addVisibilityListener();
 	m.addRangeListener();
